@@ -19,14 +19,14 @@
 \begin{document}
 
 %title and author details
-\title{Information Theory and the Physics of ``Matter Channels''}
+\title{Information Theory and Physics of ``Matter Channels''}
 \author[1]{Kevin Player\footnote{kjplaye@gmail.com}}
 
 \maketitle
 
 \epigraph{After long reflection in solitude and meditation, I suddenly had the idea, during the year 1923, that the discovery made by Einstein in 1905 should be generalised by extending it to all material particles and notably to electrons.}{Louis de Broglie}
 
-\abstract{We explore aspects of matter through the lens of information theory.  Matter is considered to have a distinct sampling rate and channel capacity, akin to a signal.  We refer to this signal as a ``matter channel''.  We demonstrate how matter channels can be modeled by Dirac spinors.  Finally, we show how to think of proper time as an emergent property of matter.}
+\abstract{We explore information theoretic aspects of matter.  Matter is considered to have a distinct sampling rate and channel capacity, akin to a signal.  We refer to this signal as a ``matter channel''.  We demonstrate how matter channels can be modeled by Dirac spinors.  Finally, we show how to think of proper time as an emergent property of matter.}
 
 \section{The Sampling Rate of Matter}
 \label{rate}
@@ -48,7 +48,7 @@ in samples per kilogram per second.  If you multiply this constant by a given ma
 \]
 
 \subsection{Zitterbewegung}
-Gregory Breit and Erwin Schrödinger studied apparent oscillations of the electron as it appears in fermionic field theory.  These oscillations were named Zitterbewegung or ``jittery motion'' in German.  The frequency 
+Gregory Breit and Erwin Schrödinger studied theoretical oscillations of the electron as it appears in fermionic field theory.  These oscillations were named Zitterbewegung or ``jittery motion'' in German.  The frequency 
 \[
  f_{Zitter} = \frac{4 \pi mc^2}{h}
  \]
@@ -59,9 +59,9 @@ We consider these frequencies to be in
 \begin{itemize}
  \item cycles per second ($f_{DB}$),
  \item clocks per seconds ($f_{Br}$),
- \item or field theoretic interactions per second ($f_{Zitter}$) respectively.
+ \item or field theoretic interactions per second ($f_{Zitter}$)
 \end{itemize}
-But more generically we will just say samples per second. 
+respectively.  But more generically we will just say samples per second. 
 
 \section{Channel Capacity}
 \subsection{Bekenstein and Dynamic Range}
@@ -70,7 +70,7 @@ Bekenstein found a limiting total amount of information within a given surface a
 \label{bek}
   H \le \frac{2 \pi c R M}{\hbar \ln(2)} \hspace{0.5 in} (\si[per-mode=symbol]{bits})
 \end{equation}
-The inequality is equality for a black hole where we say that the information is saturated.  When $H$ is less, we still have a channel with entropy given by the right hand side.  It is just only fully ``used'' when $M$ is a black hole.
+The inequality is equality for a black hole where we say that the information is saturated.  When $H$ is less than the right hand side, we still have a channel with entropy given by the right hand side.  It is just only fully ``used'' when $M$ is a black hole.
 
 Let $f$ be the sampling rate of our mass $M$.  Consider a sphere whose radius, $R$, is given by the  the resolution of the mass, the Compton wavelength\footnote{We will see in section \ref{ticktock} how massive particles have instantaneous velocity equal to $c$, so using Compton wavelength is appropriate.}
 \[
@@ -104,7 +104,13 @@ The samples of the ensemble are just the disjoint union of the samples of $m_1$ 
 \section{Proper Time Stream}
 An alternative to using (\ref{bek}) can be found by working in the mass's frame of reference. In this frame, the only dimension is time, which we call proper time from general relativity.  We imagine samples as events along the proper time line, see Figure \ref{timeline}.  These zero dimensional samples separate the one dimensional past and future and can be though of as analogs of holographic screens.  
 
-In \cite{thrust},\cite{entropic}, and \cite{bekenstein}, a particle one wavelength away from a holographic screen was studied.  We are in a reduced dimensional version of that case.  Here we have ``screens'' at each sample on the time line.  The amount of information associated with a particle, one wavelength away, entering a holographic screen was found in \cite{thrust}.  It was $\Delta S = 4\pi^2$, which when compared to a bit, $k \ln(2)$, matches (\ref{cap}).  So we find the same value for the dynamic range of the channel.
+In \cite{thrust}, \cite{entropic}, and \cite{bekenstein}, a particle one wavelength away from a holographic screen was studied.  We are in a reduced dimensional version of that case.  Here we have ``screens'' at each sample on the time line.  The amount of information associated with a particle, one wavelength away, entering a holographic screen was found in \cite{thrust}.  It was $\Delta S = 4\pi^2$, which when compared to a bit, $k \ln(2)$, matches (\ref{cap}).  So we find the same value for the dynamic range of the channel.
+
+%\[
+%\begin{array}{c}
+%  \Delta S = \frac{4\pi^2}{ln(2)} \\ \approx 56.96 (\si[per-mode=symbol]{bits\per sample})
+%\end{array}
+%\]
 
 \begin{figure}[H]
 \centering
@@ -125,10 +131,8 @@ Using the Lie algebra decomposition, the Dirac 4-spinor can then be thought of a
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.23]{zig_zag.png}
-\hspace{0.5 in}
-\includegraphics[scale=0.16]{zig_zag_higgs.png}
-\caption{These figures was copied from \cite{penrose}.  They show his interpretation of the Dirac equation and the Higgs mechanism for an electron.}
+\includegraphics[scale=1.0]{zig_zag_color.png}
+\caption{These figures were adapted from \cite{penrose}.  They show his interpretation of the Dirac equation and the Higgs mechanism for an electron.}
 \label{zigzag}
 \end{figure}
 
